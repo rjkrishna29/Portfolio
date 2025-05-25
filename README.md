@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 🌐 Live Website
 
-👉 [Visit My Portfolio][https://rjkrishna29.github.io/Portfolio/]
+👉 Visit My Portfolio : [https://rjkrishna29.github.io/Portfolio/]
 
 
 ## 🚀 Features
