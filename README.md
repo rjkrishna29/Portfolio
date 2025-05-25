@@ -15,4 +15,5 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 - 🧰 Skills & Tools used
 - 📂 Projects showcase
 - 📞 Contact form / social links
-- 🎨 Theme customization (optional)
+
+
