@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="left"><strong>Portfolio</strong> </div>
+        <div class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+
+        </div>
+        <div class="hamburger" id="hamburger">
+            <img src="logos/burger-menu-1.svg" alt="Menu"/>
+        </div>
+    </nav>
+</header>
+<h1 style="text-align: center;font-weight: bolder;font-size: 48px;">My Projects</h1>
+        
+<section class="projects-section">
+    <div class="projects-header">
+        <select id="project-filter">
+            <option value="all">All</option>
+            <option value="app">App Development</option>
+            <option value="web">Web Development</option>
+            <option value="ml">Machine Learning</option>
+            <option value="ai">Artificial Intelligence</option>
+            <option value="other">Others</option>
+        </select>
+    </div>
+
+    <div class="projects-container">
+
+        <!-- Existing Projects -->
+        <div class="project-card" data-category="app">
+            <div class="project-summary">
+                <img src="projects/calX.png" alt="Calx">
+                <h2>Calx</h2>
+            </div>
+            <div class="project-details">
+                <p style="text-align: justify;">An advanced calculator app with history and unit conversion feature, made for Android. Light/Dark mode, monochrome icons. Built using Android Studio and Java.</p>
+                <a href="https://github.com/rjkrishna29/CalX" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="app">
+            <div class="project-summary">
+                <img src="projects/tictactoe.png" alt="Tic-Tac-Toe">
+                <h2>Tic-Tac-Toe</h2>
+            </div>
+            <div class="project-details">
+                <p style="text-align: justify;">A simple two-player Tic-Tac-Toe Android app. Developed using Android Studio and Java.</p>
+                <a href="https://github.com/rjkrishna29/Tic_Tac_Toe_apk" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="other">
+            <div class="project-summary">
+                <img src="projects/cricket.jpeg" alt="Cricket Game">
+                <h2>Cricket Game</h2>
+            </div>
+            <div class="project-details">
+                <p style="text-align: justify;">A terminal-based cricket game made in Python. User plays against computer.</p>
+                <a href="https://github.com/rjkrishna29/Python-Game/tree/Cricket" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+        <div class="project-card" data-category="web">
+            <div class="project-summary">
+                <img src="projects/synth.png" alt="Synth">
+                <h2>Synth - A Web Music Player</h2>
+            </div>
+            <div class="project-details">
+                <p style="text-align: justify;">Synth transforms your browser into a powerful, responsive jukebox — just drop your music in and hit play.</p>
+                <a href="https://github.com/rjkrishna29/Synth" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+        <div class="project-card" data-category="web">
+            <div class="project-summary">
+                <img src="projects/clock.jpeg" alt="Digital Clock">
+                <h2>Digital Clock</h2>
+            </div>
+            <div class="project-details">
+                <p style="text-align: justify;">A digital clock web app featuring clock, stopwatch, and countdown timer. Made using HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/rjkrishna29/WebDigitalClock" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+            <div class="project-summary">
+                <img src="projects/calculator.jpeg" alt="Web Calculator">
+                <h2>Web Calculator</h2>
+            </div>
+            <div class="project-details">
+                <p style="text-align: justify;">A simple web-based calculator using HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/rjkrishna29/Web-Calculator" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+        
+
+         <!-- ML Project -->
+         <div class="project-card" data-category="ml">
+            <div class="project-summary">
+                <img src="projects/project6.jpg" alt="Plant Disease Detection">
+                <h2>Plant Disease Detection</h2>
+            </div>
+            <div class="project-details">
+                <p style="text-align: justify;">A plant disease detection system using YOLO model. Dataset used: FieldPlant. Identifies various leaf diseases accurately through deep learning techniques.</p>
+                <a href="https://github.com/yourusername/plant-disease-detection" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- AI Project - UCS Path Solver -->
+        <div class="project-card" data-category="ai">
+            <div class="project-summary">
+                <img src="projects/project7.jpg" alt="UCS Path Solver">
+                <h2>UCS Path Solver</h2>
+            </div>
+            <div class="project-details">
+                <p style="text-align: justify;">A project implementing the Uniform Cost Search (UCS) algorithm for solving grid-based pathfinding problems. Shows step-by-step shortest path visualization.</p>
+                <a href="https://github.com/yourusername/ucs-path-solver" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- AI Project - A* Path Solver -->
+        <div class="project-card" data-category="ai">
+            <div class="project-summary">
+                <img src="projects/project8.jpg" alt="A* Path Solver">
+                <h2>A* Path Solver</h2>
+            </div>
+            <div class="project-details">
+                <p style="text-align: justify;">An A* (A-star) algorithm based AI project for efficient pathfinding over grids. Combines heuristic + cost for faster and more accurate shortest path discovery.</p>
+                <a href="https://github.com/yourusername/astar-path-solver" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="projects.js"></script>
+<script src="script.js"></script>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.right ul');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
