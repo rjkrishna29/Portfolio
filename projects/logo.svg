@@ -1,0 +1,8 @@
+<svg width="300" height="60" viewBox="0 0 250 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 10 30 L 25 30 L 32 18 L 40 42 L 48 30 L 60 30" 
+        stroke="#00a2ffff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <text x="75" y="41" font-family="'Nunito', 'Helvetica Neue', sans-serif" font-size="32" fill="#ffffff">
+    <tspan font-weight="700">Medi</tspan><tspan font-weight="200">Connect</tspan>
+  </text>
+</svg>

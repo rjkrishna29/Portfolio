@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certificates</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .certificates-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+        .certificates-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .certificate-card {
+            background: #2c1268;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 220px; /* Fixed height for division */
+            min-height: 180px;
+        }
+        .certificate-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+        }
+        .certificate-icon {
+            font-size: 2.5rem;
+            margin-top: 18px;
+            color: #ff5252;
+        }
+        .certificate-upper {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .certificate-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #fff;
+            text-align: center;
+        }
+        .certificate-lower {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,0.08);
+        }
+        .certificate-link {
+            display: inline-block;
+            color: #4fc3f7;
+            text-decoration: underline;
+            font-size: 1rem;
+            margin: 0;
+        }
+        @media (max-width: 600px) {
+            .certificate-card {
+                height: 160px;
+            }
+            .certificate-title {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><strong>Portfolio</strong></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <img src="logos/burger-menu-1.svg" alt="Menu"/>
+            </div>
+        </nav>
+    </header>
+
+    <section class="certificates-section">
+        <div class="certificates-header">
+            <h1>My Certificates</h1>
+            <p>Here are some of my achievements and certifications.</p>
+        </div>
+        <div class="certificates-grid">
+            <!-- AICTE Certificate (Google Gen-AI) -->
+            <div class="certificate-card">
+                <div class="certificate-upper">
+                    <span class="certificate-icon"><i class="fas fa-file-pdf"></i></span>
+                    <div class="certificate-title"><strong>AICTE Certificate (Google Gen-AI)</strong></div>
+                </div>
+                <div class="certificate-lower">
+                    <a href="Certificates/AICTE%20CERTIFICATE.pdf" target="_blank" class="certificate-link">View PDF</a>
+                </div>
+            </div>
+            <!-- AWS Academy Graduate - Cloud Architecting -->
+            <div class="certificate-card">
+                <div class="certificate-upper">
+                    <span class="certificate-icon"><i class="fas fa-file-pdf"></i></span>
+                    <div class="certificate-title"><strong>AWS Academy Graduate – Cloud Architecting</strong></div>
+                </div>
+                <div class="certificate-lower">
+                    <a href="Certificates/AWS_Academy_Graduate___AWS_Academy_Cloud_Architecting_Badge20250715-28-eekm0j.pdf" target="_blank" class="certificate-link">View PDF</a>
+                </div>
+            </div>
+            <!-- Red Hat System Administration I -->
+            <div class="certificate-card">
+                <div class="certificate-upper">
+                    <span class="certificate-icon"><i class="fas fa-file-pdf"></i></span>
+                    <div class="certificate-title"><strong>Red Hat System Administration I (RH124 - RHA)</strong></div>
+                </div>
+                <div class="certificate-lower">
+                    <a href="Certificates/CourseAttendanceRed%20Hat%20System%20Administration%20I%20(RH124%20-%20RHA)%20-%20Ver.%209.3.pdf" target="_blank" class="certificate-link">View PDF</a>
+                </div>
+            </div>
+            <!-- Coursera IBM DevOps and Software Engineering -->
+            <div class="certificate-card">
+                <div class="certificate-upper">
+                    <span class="certificate-icon"><i class="fas fa-file-pdf"></i></span>
+                    <div class="certificate-title"><strong>Coursera IBM DevOps and Software Engineering</strong></div>
+                </div>
+                <div class="certificate-lower">
+                    <a href="Certificates/Coursera%20IBM%20DevOps%20and%20Software%20Certificate(MAIN).pdf" target="_blank" class="certificate-link">View PDF</a>
+                </div>
+            </div>
+            <!-- EXCELR .NET Certificate -->
+            <div class="certificate-card">
+                <div class="certificate-upper">
+                    <span class="certificate-icon"><i class="fas fa-file-pdf"></i></span>
+                    <div class="certificate-title"><strong>EXCELR .NET Certificate</strong></div>
+                </div>
+                <div class="certificate-lower">
+                    <a href="Certificates/EXCELR-99333-Ritabrato%20Pani_dot_NET.pdf" target="_blank" class="certificate-link">View PDF</a>
+                </div>
+            </div>
+            <!-- EXCELR Data Engineering Certificate -->
+            <div class="certificate-card">
+                <div class="certificate-upper">
+                    <span class="certificate-icon"><i class="fas fa-file-pdf"></i></span>
+                    <div class="certificate-title"><strong>EXCELR Data Engineering Certificate</strong></div>
+                </div>
+                <div class="certificate-lower">
+                    <a href="Certificates/EXCELR-99655-Ritabrato%20Pani_data_engineering.pdf" target="_blank" class="certificate-link">View PDF</a>
+                </div>
+            </div>
+            <!-- FreeCodeCamp ML Python -->
+            <div class="certificate-card">
+                <div class="certificate-upper">
+                    <img src="Certificates/FreeCodeCamp_ML_Python.png" alt="FreeCodeCamp ML Python" style="height:48px; margin-top:18px;">
+                    <div class="certificate-title"><strong>FreeCodeCamp ML Python</strong></div>
+                </div>
+                <div class="certificate-lower">
+                    <a href="Certificates/FreeCodeCamp_ML_Python.png" target="_blank" class="certificate-link">View Image</a>
+                </div>
+            </div>
+            <!-- Java Basic Certificate -->
+            <div class="certificate-card">
+                <div class="certificate-upper">
+                    <span class="certificate-icon"><i class="fas fa-file-pdf"></i></span>
+                    <div class="certificate-title"><strong>Java Basic Certificate</strong></div>
+                </div>
+                <div class="certificate-lower">
+                    <a href="Certificates/java_basic%20certificate.pdf" target="_blank" class="certificate-link">View PDF</a>
+                </div>
+            </div>
+            <!-- Software Engineer Certificate -->
+            <div class="certificate-card">
+                <div class="certificate-upper">
+                    <span class="certificate-icon"><i class="fas fa-file-pdf"></i></span>
+                    <div class="certificate-title"><strong>Software Engineer Certificate</strong></div>
+                </div>
+                <div class="certificate-lower">
+                    <a href="Certificates/software_engineer%20certificate.pdf" target="_blank" class="certificate-link">View PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.right ul');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
