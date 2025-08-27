@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- FontAwesome Icons -->
-    <title>Ritabrato Pani - About</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <title>Ritabrato Pani - About</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Target the main container for the about section */
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem; /* Adds space between text and buttons */
+        }
+
+        /* Target the container for the buttons */
+        .about-img {
+            display: flex;
+            flex-direction: column; /* This is the key: stacks items vertically */
+            gap: 1rem;              /* Adds space between the two buttons */
+            align-items: center;      /* Centers the buttons */
+            min-width: 220px;       /* Ensures the button container has a minimum width */
+        }
+
+        /* Style for the buttons themselves */
+        .btn {
+            width: 100%; /* Makes both buttons have the same width */
+            text-align: center;
+        }
+
+        /* Media Query for mobile devices */
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column; /* Stacks the text and buttons on small screens */
+            }
+        }
+    </style>
+
 </head>
 <body>
     <header>
@@ -32,7 +63,6 @@
         <div><h1 style="text-align: center;font-size: 3rem;margin-bottom: 30px;">About Me</h1></div>
         <section class="about-section">
             <div class="about-container">
-                <!-- Left Section (Text Content) -->
                 <div class="about-text">
                     
                     <p style="text-align: justify;">Hi, I'm Ritabrato Pani, a passionate CSE student and a developer specializing in web and mobile app development. I love building efficient and user-friendly solutions while diving into AI/ML technologies.</p>
@@ -51,17 +81,18 @@
                 </ul>
                 </div>
 
-                <!-- Right Section (Download Resume Button) -->
                 <div class="about-img">
                     <a href="resume/resume.pdf" class="btn" download="Ritabrato_Pani_Resume.pdf">
                         <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="resume/resume.pdf" class="btn" target="_blank">
+                        <i class="fas fa-eye"></i> View Resume
                     </a>
                 </div>
             </div>
         </section>
     </main>
-
-    <script src="script.js"></script>
+    
     <script src="script.js"></script>
     <script>
         const hamburger = document.getElementById('hamburger');
