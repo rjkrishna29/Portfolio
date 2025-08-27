@@ -31,30 +31,11 @@
         <section class="contact-section">
             <h1>Contact Me</h1>
             <p>Feel free to reach out for any inquiries or collaboration opportunities!</p>
-            <form action="https://formspree.io/f/mqaqawyr" method="POST">
-                <div class="form-group">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject">
-                </div>
-                <div class="form-group">
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-
+            
             <div class="contact-buttons">
-                <button class="btn email-btn" id="get-email-btn">
-                    <i class="fas fa-envelope"></i> Get My Email
-                </button>
+                <a href="mailto:ritabratopani29@gmail.com" class="btn email-btn">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
                 <a href="https://github.com/rjkrishna29" target="_blank" class="btn github-btn">
                     <i class="fab fa-github"></i> Visit GitHub
                 </a>
@@ -65,28 +46,13 @@
     <script src="script.js"></script>
     <script>
         const hamburger = document.getElementById('hamburger');
-        const navLinks = document.querySelector('.nav-right ul');
+        const navLinks = document.querySelector('.right ul');
         
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('show');
         });
 
-        // Get email button functionality
-        const emailButton = document.getElementById('get-email-btn');
-        const email = "ritabratopani29@gmail.com"; // Replace with your email address
-
-        emailButton.addEventListener('click', () => {
-            // Create a temporary textarea to copy the email
-            const textarea = document.createElement('textarea');
-            textarea.value = email;
-            document.body.appendChild(textarea);
-            textarea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textarea);
-
-            // Show notification
-            alert('Email copied to clipboard: ' + email);
-        });
+        // The JavaScript for the email button is no longer needed and has been removed.
     </script>
 </body>
 </html>
